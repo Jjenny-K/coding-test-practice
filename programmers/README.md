@@ -6,4 +6,5 @@
 ## Description
 | Directory | Difficulty | Total problems |  
 | :--: | :--: | :--: |  
-| p_lv_01 | level 01 | 55 |  
+| p_lv_01 | level 01 | 65 |  
+| p_lv_02 | level 02 | 47 |  
