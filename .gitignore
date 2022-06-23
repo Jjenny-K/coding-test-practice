@@ -4,6 +4,9 @@
 # idea
 .idea/
 
+# dev_test
+dev/
+
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
 # website: http://jupyter.org/
