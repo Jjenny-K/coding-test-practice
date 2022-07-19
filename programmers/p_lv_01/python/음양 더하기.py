@@ -11,15 +11,15 @@ def solution_001(absolutes, signs):
         else:
             answer -= absolute
 
-    print(answer)
+    return answer
 
 
 def solution_002(absolutes, signs):
-    print(sum(absolutes if sign else -absolutes for absolutes, sign in zip(absolutes, signs)))
+    return sum(absolutes if sign else -absolutes for absolutes, sign in zip(absolutes, signs))
 
 
 # run result
-absolutes_001 = [4, 7, 12]
+absolutes_001 = [4, 7, 12]  # answer = 9
 signs_001 = [True, False, True]
-solution_001(absolutes_001, signs_001)
-solution_002(absolutes_001, signs_001)
+print(solution_001(absolutes_001, signs_001))
+print(solution_002(absolutes_001, signs_001))

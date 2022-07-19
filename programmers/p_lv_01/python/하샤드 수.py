@@ -6,19 +6,20 @@ def solution_001(x):
     if x % sum(map(int, str(x))) != 0:
         answer = False
 
-    print(answer)
-    # print(False if x % sum(map(int, str(x))) != 0 else True)
+    return answer
+
+    # return False if x % sum(map(int, str(x))) != 0 else True
 
 
 def solution_002(x):
-    print(x % sum([int(i) for i in str(x)]) == 0)
+    return x % sum([int(i) for i in str(x)]) == 0
 
 
 # run result
-x_001 = 11
-solution_001(x_001)
-solution_002(x_001)
+x_001 = 11  # answer = False
+print(solution_001(x_001))
+print(solution_002(x_001))
 
-x_002 = 18
-solution_001(x_002)
-solution_002(x_002)
+x_002 = 18  # answer = True
+print(solution_001(x_002))
+print(solution_002(x_002))

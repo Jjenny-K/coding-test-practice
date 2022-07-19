@@ -2,9 +2,9 @@
 
 
 def solution(n):
-    print(int(''.join(sorted(str(n), reverse=True))))
+    return int(''.join(sorted(str(n), reverse=True)))
 
 
 # run result
-n_001 = 118372
-solution(n_001)
+n_001 = 118372  # answer = 873211
+print(solution(n_001))

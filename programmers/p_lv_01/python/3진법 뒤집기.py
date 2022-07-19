@@ -12,7 +12,7 @@ def solution_001(n):
         else:
             return convert(q, base) + tmp[r]
 
-    print(int(convert(n, 3)[::-1], 3))
+    return int(convert(n, 3)[::-1], 3)
 
 
 def solution_002(n):
@@ -21,10 +21,10 @@ def solution_002(n):
         tmp += str(n % 3)
         n = n // 3
 
-    print(int(tmp, 3))
+    return int(tmp, 3)
 
 
 # run result
-n_001 = 125
-solution_001(n_001)
-solution_002(n_001)
+n_001 = 125  # answer = 229
+print(solution_001(n_001))
+print(solution_002(n_001))

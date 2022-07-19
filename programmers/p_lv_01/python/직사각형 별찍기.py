@@ -2,7 +2,7 @@
 from programmers.utils import set_input_number
 
 # 두 개의 정수
-a, b = set_input_number()
+a_001, b_001 = set_input_number()
 
 
 def solution_001(a, b):
@@ -11,9 +11,9 @@ def solution_001(a, b):
 
 
 def solution_002(a, b):
-    print(('*' * a + '\n') * b)
+    return ('*' * a + '\n') * b
 
 
 # run result
-solution_001(a, b)
-solution_002(a, b)
+solution_001(a_001, b_001)
+print(solution_002(a_001, b_001))

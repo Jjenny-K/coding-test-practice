@@ -22,7 +22,7 @@ def solution_001(board, moves):
                 board_col[i - 1][j] = 0
                 break
 
-    print(answer)
+    return answer
 
 
 def solution_002(board, moves):
@@ -42,7 +42,7 @@ def solution_002(board, moves):
                         answer += 2
                 break
 
-    print(answer)
+    return answer
 
 
 def solution_003(board, moves):
@@ -56,7 +56,7 @@ def solution_003(board, moves):
             else:
                 stacklist.extend([l, d])
 
-    print(answer)
+    return answer
 
 
 # run result
@@ -66,7 +66,7 @@ board_001 = [[0, 0, 0, 0, 0],
              [4, 2, 4, 4, 2],
              [3, 5, 1, 3, 1]
             ]
-moves_001 = [1, 5, 3, 5, 1, 2, 1, 4]
-solution_001(board_001, moves_001)
-solution_002(board_001, moves_001)
-solution_003(board_001, moves_001)
+moves_001 = [1, 5, 3, 5, 1, 2, 1, 4]  # answer = 4
+print(solution_001(board_001, moves_001))
+print(solution_002(board_001, moves_001))
+print(solution_003(board_001, moves_001))

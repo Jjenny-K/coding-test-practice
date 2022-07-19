@@ -2,14 +2,14 @@
 
 def solution(arr):
     if len(arr) == 0:
-        print(0)
+        return 0
     else:
-        print(sum(arr) / len(arr))
+        return sum(arr) / len(arr)
 
 
 # run result
-arr_001 = [1, 2, 3, 4]
-solution(arr_001)
+arr_001 = [1, 2, 3, 4]  # answer = 2.5
+print(solution(arr_001))
 
-arr_002 = []
-solution(arr_002)
+arr_002 = []  # answer = 0
+print(solution(arr_002))

@@ -2,7 +2,7 @@
 
 
 def solution_001(n):
-    print(sum(map(int, str(n))))
+    return sum(map(int, str(n)))
 
 
 def solution_002(n):
@@ -10,6 +10,6 @@ def solution_002(n):
 
 
 # run result
-n_001 = 987
-solution_001(n_001)
+n_001 = 987  # answer = 24
+print(solution_001(n_001))
 print(solution_002(n_001))

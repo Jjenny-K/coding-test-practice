@@ -3,22 +3,23 @@
 
 def solution_001(a, b):
     a, b = sorted([a, b])
-    # print(sum([i for i in range(a, b + 1)]) if a != b else a)
-    print(sum(range(a, b + 1)))
+
+    # return sum([i for i in range(a, b + 1)]) if a != b else a
+    return sum(range(a, b + 1))
 
 
 def solution_002(a, b):
     # 가우스의 덧셈: n * (n + 1) // 2
-    print((abs(a - b) + 1) * (a + b) // 2)
+    return (abs(a - b) + 1) * (a + b) // 2
 
 
 # run result
-a_001 = 5
+a_001 = 5  # answer = 12
 b_001 = 3
-solution_001(a_001, b_001)
-solution_002(a_001, b_001)
+print(solution_001(a_001, b_001))
+print(solution_002(a_001, b_001))
 
-a_002 = 3
+a_002 = 3  # answer = 3
 b_002 = 3
-solution_001(a_002, b_002)
-solution_002(a_002, b_002)
+print(solution_001(a_002, b_002))
+print(solution_002(a_002, b_002))

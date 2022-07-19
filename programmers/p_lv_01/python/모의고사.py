@@ -27,7 +27,7 @@ def solution_001(answers):
         if value == stu_c[idx]:
             answer[3] += 1
 
-    print([key for key, value in answer.items() if value == max(answer.values())])
+    return [key for key, value in answer.items() if value == max(answer.values())]
 
 
 def solution_002(answers):
@@ -44,10 +44,10 @@ def solution_002(answers):
         if answer == stu_c[idx % len(stu_c)]:
             score[2] += 1
 
-    print([idx + 1 for idx, value in enumerate(score) if value == max(score)])
+    return [idx + 1 for idx, value in enumerate(score) if value == max(score)]
 
 
 # run result
-answers_001 = [1, 3, 2, 4, 2]
-solution_001(answers_001)
-solution_002(answers_001)
+answers_001 = [1, 3, 2, 4, 2]  # answer = [1, 2, 3]
+print(solution_001(answers_001))
+print(solution_002(answers_001))

@@ -2,7 +2,7 @@
 
 
 def solution_001(n):
-    print(min([i for i in range(1, n) if n % i == 1]))
+    return min([i for i in range(1, n) if n % i == 1])
 
 
 def solution_002(n):
@@ -15,10 +15,10 @@ def solution_002(n):
         else:
             answer = n - 1  # 약수가 없다면 본인
 
-    print(answer)
+    return answer
 
 
 # run result
-n_001 = 10
-solution_001(n_001)
-solution_002(n_001)
+n_001 = 10  # answer = 3
+print(solution_001(n_001))
+print(solution_002(n_001))

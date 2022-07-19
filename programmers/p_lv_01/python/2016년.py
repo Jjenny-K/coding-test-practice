@@ -6,17 +6,18 @@ from datetime import date
 def solution_001(a, b):
     answer = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN']
 
-    print(answer[date(2016, a, b).weekday()])
+    return answer[date(2016, a, b).weekday()]
 
 
 def solution_002(a, b):
     months = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     days = ['THU', 'FRI', 'SAT', 'SUN', 'MON', 'TUE', 'WED']
-    print(days[(sum(months[:a - 1]) + b) % 7])
+
+    return days[(sum(months[:a - 1]) + b) % 7]
 
 
 # run result
-a_001 = 1
+a_001 = 1  # answer = 'FRI'
 b_001 = 1
-solution_001(a_001, b_001)
-solution_002(a_001, b_001)
+print(solution_001(a_001, b_001))
+print(solution_002(a_001, b_001))

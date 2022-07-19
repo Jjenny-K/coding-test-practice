@@ -21,7 +21,7 @@ def solution_001(n, lost, reserve):
         if v not in set_lost:
             answer += 1
 
-    print(answer)
+    return answer
 
 
 def solution_002(n, lost, reserve):
@@ -31,16 +31,17 @@ def solution_002(n, lost, reserve):
     for r in _reserve:
         f = r - 1
         b = r + 1
+
         if f in _lost:
             _lost.remove(f)
         elif b in _lost:
             _lost.remove(b)
 
-    print(n - len(_lost))
+    return n - len(_lost)
 
 
-n_001 = 8
+n_001 = 8  # answer = 8
 lost_001 = [1, 2, 3, 4]
 reserve_001 = [1, 2, 3, 4]
-solution_001(n_001, lost_001, reserve_001)
-solution_002(n_001, lost_001, reserve_001)
+print(solution_001(n_001, lost_001, reserve_001))
+print(solution_002(n_001, lost_001, reserve_001))

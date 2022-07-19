@@ -7,12 +7,12 @@ def solution(arr):
     if len(arr) == 0:
         arr.append(-1)
 
-    print(arr)
+    return arr
 
 
 # run result
-arr_001 = [1, 4, 3, 2]
-solution(arr_001)
+arr_001 = [1, 4, 3, 2]  # answer = [4, 3, 2]
+print(solution(arr_001))
 
-arr_002 = [10]
-solution(arr_002)
+arr_002 = [10]  # answer = [-1]
+print(solution(arr_002))

@@ -13,14 +13,14 @@ def solution_001(s):
                 answer += v.lower()
         answer += ' '
 
-    print(answer[:-1])
+    return answer[:-1]
 
 
 def solution_002(s):
-    print(" ".join(map(lambda x: "".join([a.lower() if i % 2 else a.upper() for i, a in enumerate(x)]), s.split(" "))))
+    return " ".join(map(lambda x: "".join([a.lower() if i % 2 else a.upper() for i, a in enumerate(x)]), s.split(" ")))
 
 
 # run result
-s_001 = 'try hello world '
-solution_001(s_001)
-solution_002(s_001)
+s_001 = 'try hello world '  # answer = 'TrY HeLlO WoRlD '
+print(solution_001(s_001))
+print(solution_002(s_001))

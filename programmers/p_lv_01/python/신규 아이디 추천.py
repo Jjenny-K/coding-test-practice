@@ -25,7 +25,7 @@ def solution_001(new_id):
     new_id = new_id[:-1] if new_id.endswith('.') else new_id
     new_id = new_id + ''.join(new_id[-1] for _ in range(3 - len(new_id))) if len(new_id) <= 2 else new_id
 
-    print(new_id)
+    return new_id
 
 
 def solution_002(new_id):
@@ -37,10 +37,10 @@ def solution_002(new_id):
     new_id = re.sub('^[.]|[.]$', '', new_id)
     new_id = new_id if len(new_id) > 2 else new_id + "".join([new_id[-1] for _ in range(3 - len(new_id))])
 
-    print(new_id)
+    return new_id
 
 
 # run result
-new_id_001 = '...!@BaT#*..y.abcdefghijklm'
-solution_001(new_id_001)
-solution_002(new_id_001)
+new_id_001 = '...!@BaT#*..y.abcdefghijklm'  # answer = 'bat.y.abcdefghi'
+print(solution_001(new_id_001))
+print(solution_002(new_id_001))

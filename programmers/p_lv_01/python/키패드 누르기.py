@@ -39,10 +39,10 @@ def solution(numbers, hand):
         else:
             right = number
 
-    print(answer)
+    return answer
 
 
 # run result
-numbers_001 = [7, 0, 8, 2, 8, 3, 1, 5, 7, 6, 2]
+numbers_001 = [7, 0, 8, 2, 8, 3, 1, 5, 7, 6, 2]  # answer = 'LRLLRRLLLRR'
 hand_001 = 'left'
-solution(numbers_001, hand_001)
+print(solution(numbers_001, hand_001))

@@ -17,7 +17,7 @@ def solution_001(n, arr1, arr2):
 
         return text.translate(trans_table)
 
-    print([trans_result(val) for val in answer])
+    return [trans_result(val) for val in answer]
 
 
 def solution_002(n, arr1, arr2):
@@ -29,7 +29,7 @@ def solution_002(n, arr1, arr2):
         calc = calc.replace('0', ' ')
         answer.append(calc)
 
-    print(answer)
+    return answer
 
 
 def solution_003(n, arr1, arr2):
@@ -38,13 +38,13 @@ def solution_003(n, arr1, arr2):
         # print(f'{x:016b}')
         return ''.join(' #'[int(i)] for i in f'{x:016b}'[-n:])
 
-    print([line(n, a | b) for a, b in zip(arr1, arr2)])
+    return [line(n, a | b) for a, b in zip(arr1, arr2)]
 
 
 # run result
-n_001 = 6
+n_001 = 6  # answer = ['######', '###  #', '##  ##', ' #### ', ' #####', '### # ']
 arr1_001 = [46, 33, 33, 22, 31, 50]
 arr2_001 = [27, 56, 19, 14, 14, 10]
-solution_001(n_001, arr1_001, arr2_001)
-solution_002(n_001, arr1_001, arr2_001)
-solution_003(n_001, arr1_001, arr2_001)
+print(solution_001(n_001, arr1_001, arr2_001))
+print(solution_002(n_001, arr1_001, arr2_001))
+print(solution_003(n_001, arr1_001, arr2_001))

@@ -10,15 +10,15 @@ def solution_001(sizes):
         min_list.append(min(i, j))
         max_list.append(max(i, j))
 
-    print(max(min_list) * max(max_list))
-    # print(max(max(x) for x in sizes) * max(min(x) for x in sizes))
+    return max(min_list) * max(max_list)
+    # return max(max(x) for x in sizes) * max(min(x) for x in sizes)
 
 
 def solution_002(sizes):
-    print(max(sum(sizes, [])) * max(min(size) for size in sizes))
+    return max(sum(sizes, [])) * max(min(size) for size in sizes)
 
 
 # run result
-sizes_001 = [[14, 4], [19, 6], [6, 16], [18, 7], [7, 11]]
-solution_001(sizes_001)
-solution_002(sizes_001)
+sizes_001 = [[14, 4], [19, 6], [6, 16], [18, 7], [7, 11]]  # answer = 133
+print(solution_001(sizes_001))
+print(solution_002(sizes_001))

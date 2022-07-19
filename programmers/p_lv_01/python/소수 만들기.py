@@ -17,7 +17,7 @@ def solution_001(nums):
         if chk:
             answer += 1
 
-    print(answer)
+    return answer
 
 
 def solution_002(nums):
@@ -38,10 +38,10 @@ def solution_002(nums):
     prime_list = find_prime(3000)
     sum_list = [sum(i) for i in list(itertools.combinations(nums, 3))]
 
-    print(len([v for v in sum_list if v in prime_list]))
+    return len([v for v in sum_list if v in prime_list])
 
 
 # run result
-nums_001 = [1, 2, 7, 6, 4]
-solution_001(nums_001)
-solution_002(nums_001)
+nums_001 = [1, 2, 7, 6, 4]  # answer = 4
+print(solution_001(nums_001))
+print(solution_002(nums_001))

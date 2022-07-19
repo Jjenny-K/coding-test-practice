@@ -34,7 +34,7 @@ def solution_001(id_list, report, k):
                 cnt += 1
         answer.append(cnt)
 
-    print(answer)
+    return answer
 
 
 def solution_002(id_list, report, k):
@@ -50,12 +50,12 @@ def solution_002(id_list, report, k):
         if reports[r.split()[1]] >= k:
             answer[id_list.index(r.split()[0])] += 1
 
-    print(answer)
+    return answer
 
 
 # run result
-id_list_001 = ["muzi", "frodo", "apeach", "neo"]
+id_list_001 = ["muzi", "frodo", "apeach", "neo"]  # answer = [2, 1, 1, 0]
 report_001 = ["muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"]
 k_001 = 2
-solution_001(id_list_001, report_001, k_001)
-solution_002(id_list_001, report_001, k_001)
+print(solution_001(id_list_001, report_001, k_001))
+print(solution_002(id_list_001, report_001, k_001))

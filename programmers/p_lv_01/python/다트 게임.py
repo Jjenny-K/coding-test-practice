@@ -34,7 +34,7 @@ def solution_001(dart_result):
         elif val == '#':
             answer[-1] = answer[-1] * -1
 
-    print(sum(answer))
+    return sum(answer)
 
 
 def solution_002(dart_result):
@@ -58,7 +58,7 @@ def solution_002(dart_result):
             answer.append(int(j))
             i += 1
 
-    print(sum(answer))
+    return sum(answer)
 
 
 def solution_003(dart_result):
@@ -73,21 +73,21 @@ def solution_003(dart_result):
             dart[i - 1] *= 2
         dart[i] = int(dart[i][0]) ** bonus[dart[i][1]] * option[dart[i][2]]
 
-    print(sum(dart))
+    return sum(dart)
 
 
 # run result
-dart_result_001 = '1D2S#10S'  # 1**2 + 2**1 * (-1) + 10**1
-solution_001(dart_result_001)
-solution_002(dart_result_001)
-solution_003(dart_result_001)
+dart_result_001 = '1D2S#10S'  # answer = 1**2 + 2**1 * (-1) + 10**1 = 9
+print(solution_001(dart_result_001))
+print(solution_002(dart_result_001))
+print(solution_003(dart_result_001))
 
-dart_result_002 = '1S*2T*3S'  #	1**1 * 2 * 2 + 2**3 * 2 + 3**1
-solution_001(dart_result_002)
-solution_002(dart_result_002)
-solution_003(dart_result_002)
+dart_result_002 = '1S*2T*3S'  #	answer = 1**1 * 2 * 2 + 2**3 * 2 + 3**1 = 23
+print(solution_001(dart_result_002))
+print(solution_002(dart_result_002))
+print(solution_003(dart_result_002))
 
-dart_result_003 = '1D#2S*3S'  # 1**2 * (-1) * 2 + 2**1 * 2 + 3**1
-solution_001(dart_result_003)
-solution_002(dart_result_003)
-solution_003(dart_result_003)
+dart_result_003 = '1D#2S*3S'  # answer = 1**2 * (-1) * 2 + 2**1 * 2 + 3**1 = 5
+print(solution_001(dart_result_003))
+print(solution_002(dart_result_003))
+print(solution_003(dart_result_003))

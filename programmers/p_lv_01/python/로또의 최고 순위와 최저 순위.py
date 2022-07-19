@@ -5,6 +5,7 @@
 
 def solution_001(lottos, win_nums):
     win_cnts = 0
+
     for i in lottos:
         if i > 0 and i in win_nums:
             win_cnts += 1
@@ -29,16 +30,17 @@ def solution_002(lottos, win_nums):
     #         win_cnts += 1
     #
     # return rank[lottos.count(0) + win_cnts], rank[win_cnts]
+
     return rank[len(set(lottos) & set(win_nums)) + lottos.count(0)], rank[len(set(lottos) & set(win_nums))]
 
 
 # run result
-lottos_001 = [0, 0, 0, 0, 0, 0]
+lottos_001 = [0, 0, 0, 0, 0, 0]  # answer = (1, 6)
 win_nums_001 = [38, 19, 20, 40, 15, 25]
 print(solution_001(lottos_001, win_nums_001))
 print(solution_002(lottos_001, win_nums_001))
 
-lottos_002 = [45, 4, 35, 20, 3, 9]
+lottos_002 = [45, 4, 35, 20, 3, 9]  # answer = (1, 1)
 win_nums_002 = [20, 9, 3, 45, 4, 35]
 print(solution_001(lottos_002, win_nums_002))
 print(solution_002(lottos_002, win_nums_002))

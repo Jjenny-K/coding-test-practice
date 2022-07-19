@@ -3,14 +3,14 @@
 
 
 def solution_001(s):
-    print(''.join(sorted(s, reverse=True)))
+    return ''.join(sorted(s, reverse=True))
 
 
 def solution_002(s):
-    print(''.join([chr(n) for n in sorted([ord(c) for c in list(s)], reverse=True)]))
+    return ''.join([chr(n) for n in sorted([ord(c) for c in list(s)], reverse=True)])
 
 
 # run result
-s_001 = 'Zbcdefg'
-solution_001(s_001)
-solution_002(s_001)
+s_001 = 'Zbcdefg'  # answer = 'gfedcbZ'
+print(solution_001(s_001))
+print(solution_002(s_001))

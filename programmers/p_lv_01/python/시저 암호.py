@@ -18,7 +18,7 @@ def solution_001(s, n):
         else:
             answer += ' '
 
-    print(answer)
+    return answer
 
 
 def solution_002(s, n):
@@ -32,11 +32,11 @@ def solution_002(s, n):
         else:
             answer += ' '
 
-    print(answer)
+    return answer
 
 
 # run result
-s_001 = 'a B z'
+s_001 = 'a B z'  # answer = 'd E c'
 n_001 = 3
-solution_001(s_001, n_001)
-solution_002(s_001, n_001)
+print(solution_001(s_001, n_001))
+print(solution_002(s_001, n_001))

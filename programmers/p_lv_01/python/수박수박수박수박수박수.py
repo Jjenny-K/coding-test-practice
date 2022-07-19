@@ -10,19 +10,19 @@ def solution_001(n):
         else:
             answer += '박'
 
-    print(answer)
+    return answer
 
 
 def solution_002(n):
-    print("".join(["수박"[i % 2] for i in range(n)]))
+    return "".join(["수박"[i % 2] for i in range(n)])
 
 
 def solution_003(n):
-    print("수박" * (n // 2) + "수" * (n % 2))
+    return "수박" * (n // 2) + "수" * (n % 2)
 
 
 # run result
-n_001 = 17
-solution_001(n_001)
-solution_002(n_001)
-solution_003(n_001)
+n_001 = 17  # answer = '수박수박수박수박수박수박수박수박수'
+print(solution_001(n_001))
+print(solution_002(n_001))
+print(solution_003(n_001))

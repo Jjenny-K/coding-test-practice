@@ -11,7 +11,7 @@ def solution_001(s):
     for k, v in words.items():
         s = s.replace(v, k)
 
-    print(int(s))
+    return int(s)
 
 
 def solution_002(s):
@@ -21,10 +21,10 @@ def solution_002(s):
     for i, v in enumerate(words):
         s = s.replace(v, str(i))
 
-    print(int(s))
+    return int(s)
 
 
 # run result
-s_001 = '2three45sixseven'
-solution_001(s_001)
-solution_002(s_001)
+s_001 = '2three45sixseven'  # answer = 234567
+print(solution_001(s_001))
+print(solution_002(s_001))

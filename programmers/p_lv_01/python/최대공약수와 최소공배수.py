@@ -21,7 +21,7 @@ def solution_001(n, m):
             answer.append(j)
             break
 
-    print(answer)
+    return answer
 
 
 def solution_002(n, m):
@@ -34,16 +34,16 @@ def solution_002(n, m):
         # 두 수를 곱한 값을 최대공약수로 나눈 몫은 최소공배수이다
         return (x * y) // get_gcd(x, y)
 
-    print([get_gcd(n, m), get_lcm(n, m)])
+    return [get_gcd(n, m), get_lcm(n, m)]
 
 
 def solution_003(n, m):
-    print([math.gcd(n, m), math.lcm(n, m)])
+    return [math.gcd(n, m), math.lcm(n, m)]
 
 
 # run result
-n_001 = 3
+n_001 = 3  # answer = [3, 12]
 m_001 = 12
-solution_001(n_001, m_001)
-solution_002(n_001, m_001)
-solution_003(n_001, m_001)
+print(solution_001(n_001, m_001))
+print(solution_002(n_001, m_001))
+print(solution_003(n_001, m_001))

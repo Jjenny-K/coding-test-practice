@@ -9,7 +9,7 @@ def solution_001(d, budget):
         if sum(d) > budget:
             d.pop()
 
-    print(len(d))
+    return len(d)
 
 
 def solution_002(d, budget):
@@ -21,11 +21,11 @@ def solution_002(d, budget):
         budget -= i
         answer += 1
 
-    print(answer)
+    return answer
 
 
 # run result
-d_001 = [1, 3, 2, 5, 4]
+d_001 = [1, 3, 2, 5, 4]  # answer = 3
 budget_001 = 9
-solution_001(d_001, budget_001)
-solution_002(d_001, budget_001)
+print(solution_001(d_001, budget_001))
+print(solution_002(d_001, budget_001))

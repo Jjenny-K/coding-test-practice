@@ -24,15 +24,15 @@ def solution(num):
         answer += 1
         count += 1
 
-    print(-1 if answer >= 500 else answer)
+    return -1 if answer >= 500 else answer
 
 
 # run result
-num_001 = 16
-solution(num_001)
+num_001 = 16  # answer = 4
+print(solution(num_001))
 
-num_002 = 1
-solution(num_002)
+num_002 = 1  # answer = 0
+print(solution(num_002))
 
-num_003 = 626331
-solution(num_003)
+num_003 = 626331  # answer = -1
+print(solution(num_003))

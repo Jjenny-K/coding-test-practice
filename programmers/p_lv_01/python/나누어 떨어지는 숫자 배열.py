@@ -8,22 +8,22 @@ def solution_001(arr, divisor):
     if len(answer) == 0:
         answer.append(-1)
 
-    print(answer)
+    return answer
 
 
 def solution_002(arr, divisor):
     answer = sorted([i for i in arr if i % divisor == 0])
 
-    print(answer if len(answer) != 0 else [-1])
+    return answer if len(answer) != 0 else [-1]
 
 
 def solution_003(arr, divisor):
-    print(sorted([i for i in arr if i % divisor == 0]) or [-1])
+    return sorted([i for i in arr if i % divisor == 0]) or [-1]
 
 
 # run result
-arr_001 = [5, 9, 7, 10]
+arr_001 = [5, 9, 7, 10]  # answer = [5, 10]
 divisor_001 = 5
-solution_001(arr_001, divisor_001)
-solution_002(arr_001, divisor_001)
-solution_003(arr_001, divisor_001)
+print(solution_001(arr_001, divisor_001))
+print(solution_002(arr_001, divisor_001))
+print(solution_003(arr_001, divisor_001))

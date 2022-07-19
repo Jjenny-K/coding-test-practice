@@ -18,17 +18,17 @@ def solution_001(participant, completion):
 
 def solution_002(participant, completion):
     answer = collections.Counter(participant) - collections.Counter(completion)
+
     return list(answer)[0]
 
 
 # run result
-participant_001 = ["leo", "kiki", "eden"]
+participant_001 = ["leo", "kiki", "eden"]  # answer = 'leo'
 completion_001 = ["eden", "kiki"]
-print(collections.Counter(participant_001))
 print(solution_001(participant_001, completion_001))
 print(solution_002(participant_001, completion_001))
 
-participant_002 = ["mislav", "stanko", "mislav", "ana"]
+participant_002 = ["mislav", "stanko", "mislav", "ana"]  # answer = 'mislav'
 completion_002 = ["stanko", "ana", "mislav"]
 print(solution_001(participant_002, completion_002))
 print(solution_002(participant_002, completion_002))

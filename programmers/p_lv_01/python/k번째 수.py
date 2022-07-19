@@ -7,15 +7,15 @@ def solution_001(array, commands):
     for val in commands:
         answer.append(sorted(array[val[0] - 1:val[1]])[val[2] - 1])
 
-    print(answer)
+    return answer
 
 
 def solution_002(array, commands):
-    print(list(map(lambda x: sorted(array[x[0] - 1:x[1]])[x[2] - 1], commands)))
+    return list(map(lambda x: sorted(array[x[0] - 1:x[1]])[x[2] - 1], commands))
 
 
 # run result
-array_001 = [1, 5, 2, 6, 3, 7, 4]
+array_001 = [1, 5, 2, 6, 3, 7, 4]  # answer = [5, 6, 3]
 commands_001 = [[2, 5, 3], [4, 4, 1], [1, 7, 3]]
-solution_001(array_001, commands_001)
-solution_002(array_001, commands_001)
+print(solution_001(array_001, commands_001))
+print(solution_002(array_001, commands_001))

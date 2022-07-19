@@ -4,19 +4,19 @@ import collections
 
 
 def solution_001(s):
-    print(s.lower().count('p') == s.lower().count('y'))
+    return s.lower().count('p') == s.lower().count('y')
 
 
 def solution_002(s):
     cnt = collections.Counter(s.lower())
-    print(cnt['p'] == cnt['y'])
+    return cnt['p'] == cnt['y']
 
 
 # run result
-s_001 = 'PoooyY'
-solution_001(s_001)
-solution_002(s_001)
+s_001 = 'PoooyY'  # answer = False
+print(solution_001(s_001))
+print(solution_002(s_001))
 
-s_002 = 'aBcdEfg'
-solution_001(s_002)
-solution_002(s_002)
+s_002 = 'aBcdEfg'  # answer = True
+print(solution_001(s_002))
+print(solution_002(s_002))

@@ -6,19 +6,19 @@ def solution_001(n):
     # 제곱의 역연산: ²√x = x^½
     x = n ** 0.5
 
-    # print((x + 1) ** 2 if x % 1 == 0 else -1)
-    print(-1 if x % 1 else (x + 1) ** 2)
+    # return (x + 1) ** 2 if x % 1 == 0 else -1
+    return -1 if x % 1 else (x + 1) ** 2
 
 
 def solution_002(n):
-    print(-1 if math.sqrt(n) % 1 else (math.sqrt(n) + 1) ** 2)
+    return -1 if math.sqrt(n) % 1 else (math.sqrt(n) + 1) ** 2
 
 
 # run result
-n_001 = 121
-solution_001(n_001)
-solution_002(n_001)
+n_001 = 121  # answer = 144
+print(solution_001(n_001))
+print(solution_002(n_001))
 
-n_002 = 3
-solution_001(n_002)
-solution_002(n_002)
+n_002 = 3  # answer = -1
+print(solution_001(n_002))
+print(solution_002(n_002))

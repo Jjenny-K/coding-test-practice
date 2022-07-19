@@ -7,7 +7,7 @@ def solution_001(arr):
         if answer[-1] != val:
             answer.append(val)
 
-    print(answer)
+    return answer
 
 
 def solution_002(arr):
@@ -17,10 +17,10 @@ def solution_002(arr):
         if answer[-1:] != [val]:
             answer.append(val)
 
-    print(answer)
+    return answer
 
 
 # run result
-arr_001 = [1, 1, 3, 3, 0, 1, 1]
-solution_001(arr_001)
-solution_002(arr_001)
+arr_001 = [1, 1, 3, 3, 0, 1, 1]  # answer = [1, 3, 0, 1]
+print(solution_001(arr_001))
+print(solution_002(arr_001))

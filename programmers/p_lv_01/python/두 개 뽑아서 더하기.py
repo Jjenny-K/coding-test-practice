@@ -3,7 +3,7 @@ import itertools
 
 
 def solution_001(numbers):
-    print(sorted(set([sum(i) for i in list(itertools.combinations(numbers, 2))])))
+    return sorted(set([sum(i) for i in list(itertools.combinations(numbers, 2))]))
 
 
 def solution_002(numbers):
@@ -13,10 +13,10 @@ def solution_002(numbers):
         for j in range(i + 1, len(numbers)):
             answer.append(numbers[i] + numbers[j])
 
-    print(sorted(set(answer)))
+    return sorted(set(answer))
 
 
 # run result
-numbers_001 = [2, 1, 3, 4, 1]
-solution_001(numbers_001)
-solution_002(numbers_001)
+numbers_001 = [2, 1, 3, 4, 1]  # answer = [2, 3, 4, 5, 6, 7]
+print(solution_001(numbers_001))
+print(solution_002(numbers_001))

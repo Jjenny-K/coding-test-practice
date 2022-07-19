@@ -5,9 +5,10 @@
 def solution(numbers):
     numbers = list(map(str, numbers))
     numbers.sort(key=lambda x: x * 3, reverse=True)
-    print(str(int(''.join(numbers))))
+
+    return str(int(''.join(numbers)))
 
 
 # run result
-numbers_001 = [3, 30, 34, 5, 9]
-solution(numbers_001)
+numbers_001 = [3, 30, 34, 5, 9]  # answer = 9534330
+print(solution(numbers_001))

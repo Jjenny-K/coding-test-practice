@@ -4,8 +4,10 @@
 
 def solution_001(strings, n):
     # strings.sort(key=lambda x: (x[n], x))
-    # print(strings)
-    print(sorted(strings, key=lambda x: (x[n], x)))
+
+    # return strings
+
+    return sorted(strings, key=lambda x: (x[n], x))
 
 
 def solution_002(strings, n):
@@ -13,16 +15,16 @@ def solution_002(strings, n):
     for sv in strings:
         answer.append(sv[n] + sv)
 
-    print([av[1:] for av in sorted(answer)])
+    return [av[1:] for av in sorted(answer)]
 
 
 # run results
-strings_001 = ["sun", "bed", "car"]
+strings_001 = ["sun", "bed", "car"]  # answer = ['car', 'bed', 'sun']
 n_001 = 1
-solution_001(strings_001, n_001)
-solution_002(strings_001, n_001)
+print(solution_001(strings_001, n_001))
+print(solution_002(strings_001, n_001))
 
-strings_002 = ["abce", "abcd", "cdx"]
+strings_002 = ["abce", "abcd", "cdx"]  # answer = ['abcd', 'abce', 'cdx']
 n_002 = 2
-solution_001(strings_002, n_002)
-solution_002(strings_002, n_002)
+print(solution_001(strings_002, n_002))
+print(solution_002(strings_002, n_002))

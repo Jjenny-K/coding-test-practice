@@ -13,7 +13,7 @@ def solution_001(n):
         if cnt == 1:
             answer += 1
 
-    print(answer)
+    return answer
 
 
 def solution_002(n):
@@ -28,7 +28,7 @@ def solution_002(n):
         if cnt == 0:
             answer += 1
 
-    print(answer)
+    return answer
 
 
 def solution_003(n):
@@ -42,7 +42,7 @@ def solution_003(n):
             for j in range(2 * i, n + 1, i):
                 prime_list[j] = False
 
-    print(answer)
+    return answer
 
 
 def solution_004(n):
@@ -52,12 +52,12 @@ def solution_004(n):
         if i in num:
             num -= set(range(2 * i, n + 1, i))
 
-    print(len(num))
+    return len(num)
 
 
 # run result
-n_001 = 10
-solution_001(n_001)
-solution_002(n_001)
-solution_003(n_001)
-solution_004(n_001)
+n_001 = 10  # answer = 4
+print(solution_001(n_001))
+print(solution_002(n_001))
+print(solution_003(n_001))
+print(solution_004(n_001))
