@@ -1,3 +1,5 @@
+# list
+
 # 0 - 9 중 일부로 이루어진 배열 numbers에서 0 - 9 중 없는 수를 찾아서 더해 출력
 
 def solution_001(numbers):

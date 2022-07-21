@@ -1,3 +1,5 @@
+# 연산
+
 # 정수 배열 arr 평균값 출력
 
 def solution(arr):

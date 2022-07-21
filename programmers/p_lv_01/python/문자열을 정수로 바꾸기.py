@@ -1,3 +1,5 @@
+# str to int
+
 # 문자열 s를 숫자로 출력(부호 포함)
 
 def solution(s):

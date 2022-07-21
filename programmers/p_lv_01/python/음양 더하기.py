@@ -1,3 +1,5 @@
+# 연산 # list
+
 # 정수의 절댓값 배열 absolutes, 정수 부호 배열 signs가 있을 때 실제 정수들의 합 출력
 # signs[i]가 참일 경우 absolutes[i]의 실제 정수는 양수, 그렇지 않으면 음수를 의미
 

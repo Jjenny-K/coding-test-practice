@@ -1,3 +1,5 @@
+# 문자열 파싱
+
 # 대소문자가 섞여있는 문자열 s에서 p와 y의 개수가 같으면 true, 다르면 false 출력
 # p와 y가 하나도 없는 경우 true
 import collections

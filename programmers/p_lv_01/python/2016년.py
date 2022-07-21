@@ -1,3 +1,5 @@
+# list
+
 # 2016년 1월 1일은 금요일일때, 2016년 a월 b일은 무슨 요일인지 출력
 # 요일: SUN, MON, TUE, WED, THU, FRI, SAT
 from datetime import date

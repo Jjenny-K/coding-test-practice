@@ -1,3 +1,5 @@
+# 문자열 출력
+
 # 가로 a, 세로 b인 직사각형 출력
 from programmers.utils import set_input_number
 
