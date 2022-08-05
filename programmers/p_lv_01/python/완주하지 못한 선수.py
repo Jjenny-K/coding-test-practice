@@ -1,4 +1,4 @@
-# dictionary
+# 완전 탐색 # dictionary
 
 # 마라톤에 참여한 선수들 이름이 담긴 배열 participant, 완주한 선수들 이름이 담긴 배열 completion
 # 완주하지 못한 선수의 이름 출력
