@@ -39,7 +39,7 @@ def make_team(member, cnt):
     for i in range(cnt, N):
         if not visited[i]:
             visited[i] = True  # 해당 팀원을 하나의 팀으로 배정(방문하지 않았다면 방문, False -> True)
-            make_team(member + 1, cnt + 1)
+            make_team(member + 1, i + 1)
             visited[i] = False  # 다른 경우의 수를 위한 원복
 
 
