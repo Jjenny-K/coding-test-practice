@@ -4,6 +4,7 @@
 # N x N 형태로 이루어진 각 인원이 같은 팀에 속할 때 팀에 더해지는 능력치
 # 팀에 속한 모든 쌍의 능력치의 합이 팀 능력치일 때, 두 팀의 능력치 차이의 최소 값 출력
 
+""" DFS 활용 """
 import sys
 
 N = int(sys.stdin.readline())
@@ -44,4 +45,30 @@ def make_team(member, cnt):
 
 
 make_team(0, 0)
+print(min_gab)
+
+
+
+""" library - itertools 활용 """
+import sys
+import itertools
+
+N = int(sys.stdin.readline())
+ability_level = [list(map(int, sys.stdin.readline().split())) for _ in range(N)]
+
+members = list(range(N))
+min_gab = 2147000000
+
+for team_start in list(itertools.combinations(members, N // 2)):
+    team_link = list(set(members) - set(team_start))
+    start_ability, link_ability = 0, 0
+
+    for i, j in list(itertools.combinations(team_start, 2)):
+        start_ability += ability_level[i][j] + ability_level[j][i]
+
+    for i, j in list(itertools.combinations(team_link, 2)):
+        link_ability += ability_level[i][j] + ability_level[j][i]
+
+    min_gab = min(abs(start_ability - link_ability), min_gab)
+
 print(min_gab)
